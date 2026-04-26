@@ -1,0 +1,8 @@
+.idea/
+
+venv/
+
+build/
+cmake-build-*/
+
+*.pdf

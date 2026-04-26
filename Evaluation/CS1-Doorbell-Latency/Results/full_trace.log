@@ -1,0 +1,302 @@
+# config=full_trace date=2026-04-05 22:38:38
+--- run 1 ---
+[Launcher] Launching ./doorbell_bench
+[Launcher] Launching ./doorbell_bench
+[Launcher] Launching ./doorbell_bench
+[Launcher] Launching ./doorbell_bench
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+SigmaTrace Doorbell Benchmark v3
+PEs=4  warmup=500  iters=5000  mode=all
+Timing: globaltimer (fixed-freq ns, DVFS-immune)
+─────────────────────────────────────────────────
+
+=== SCALAR OPS (per-op completion latency, ns) ===
+  put           median=   22304 ns  p5=   21216  p95=   23008  min=   20256  max= 3335936
+  get           median=   19616 ns  p5=   19264  p95=   20992  min=   18912  max= 2461792
+  atomic        median=   19552 ns  p5=   19168  p95=   21120  min=   18656  max= 2464192
+  pingpong      median=   26752 ns  p5=   26080  p95=   29600  min=   25536  max= 2586496
+
+=== BULK PUT (per-op completion latency, ns) ===
+  put_bulk         bytes   median_ns       p5_ns      p95_ns    med_GB/s
+                      16       24704       23840       25728       0.001
+                      64       24704       23840       25728       0.003
+                     256       25024       24000       26208       0.010
+                    1024       25056       24128       26304       0.041
+                    4096       25856       24832       26944       0.158
+                   16384       27744       26720       29440       0.591
+                   65536       34080       30912       48736       1.923
+                  262144      119296       54880     2458368       2.197
+
+Results written to doorbell_ops.csv
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 601
+[Profiler] doorbell_skipped: 65453
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 601
+[Profiler] doorbell_skipped: 65453
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 602
+[Profiler] doorbell_skipped: 65452
+[Profiler] Exited Normally!
+[Profiler] Exited Normally!
+[Profiler] Exited Normally!
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 602
+[Profiler] doorbell_skipped: 65452
+[Profiler] Exited Normally!
+
+--- run 2 ---
+[Profiler] Overwriting EventRecorder
+[Profiler] Overwriting EventRecorder
+[Launcher] Launching ./doorbell_bench
+[Launcher] Launching ./doorbell_bench
+[Profiler] Overwriting EventRecorder
+[Launcher] Launching ./doorbell_bench
+[Profiler] Overwriting EventRecorder
+[Launcher] Launching ./doorbell_bench
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+SigmaTrace Doorbell Benchmark v3
+PEs=4  warmup=500  iters=5000  mode=all
+Timing: globaltimer (fixed-freq ns, DVFS-immune)
+─────────────────────────────────────────────────
+
+=== SCALAR OPS (per-op completion latency, ns) ===
+  put           median=   22016 ns  p5=   20928  p95=   22848  min=   19520  max= 2998048
+  get           median=   19360 ns  p5=   19200  p95=   20608  min=   18784  max= 2623296
+  atomic        median=   20448 ns  p5=   19072  p95=   21792  min=   18400  max= 2463936
+  pingpong      median=   27296 ns  p5=   26624  p95=   30528  min=   25536  max= 2786656
+
+=== BULK PUT (per-op completion latency, ns) ===
+  put_bulk         bytes   median_ns       p5_ns      p95_ns    med_GB/s
+                      16       24704       23616       25472       0.001
+                      64       24704       23616       25504       0.003
+                     256       24736       23808       25728       0.010
+                    1024       25024       23904       25760       0.041
+                    4096       25696       24576       26720       0.159
+                   16384       27424       26464       30400       0.597
+                   65536       37280       31360       46464       1.758
+                  262144       55648       52960      129472       4.711
+
+Results written to doorbell_ops.csv
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 602
+[Profiler] doorbell_skipped: 65452
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 602
+[Profiler] doorbell_skipped: 65452
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 601
+[Profiler] doorbell_skipped: 65453
+[Profiler] Exited Normally!
+[Profiler] Exited Normally!
+[Profiler] Exited Normally!
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 601
+[Profiler] doorbell_skipped: 65453
+[Profiler] Exited Normally!
+
+--- run 3 ---
+[Profiler] Overwriting EventRecorder
+[Profiler] Overwriting EventRecorder
+[Launcher] Launching ./doorbell_bench
+[Launcher] Launching ./doorbell_bench
+[Profiler] Overwriting EventRecorder
+[Launcher] Launching ./doorbell_bench
+[Profiler] Overwriting EventRecorder
+[Launcher] Launching ./doorbell_bench
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+SigmaTrace Doorbell Benchmark v3
+PEs=4  warmup=500  iters=5000  mode=all
+Timing: globaltimer (fixed-freq ns, DVFS-immune)
+─────────────────────────────────────────────────
+
+=== SCALAR OPS (per-op completion latency, ns) ===
+  put           median=   23296 ns  p5=   22144  p95=   24032  min=   19904  max= 2465376
+  get           median=   20288 ns  p5=   19936  p95=   22016  min=   19488  max= 2471552
+  atomic        median=   20416 ns  p5=   19776  p95=   21920  min=   19392  max= 2462176
+  pingpong      median=   28352 ns  p5=   27584  p95=   31872  min=   26784  max= 2865312
+
+=== BULK PUT (per-op completion latency, ns) ===
+  put_bulk         bytes   median_ns       p5_ns      p95_ns    med_GB/s
+                      16       25408       24544       26720       0.001
+                      64       25376       24384       26528       0.003
+                     256       25728       24640       26752       0.010
+                    1024       25728       24800       26752       0.040
+                    4096       26400       25472       27744       0.155
+                   16384       28768       27584       32128       0.570
+                   65536       34048       32032       43904       1.925
+                  262144       55456       53792      121600       4.727
+
+Results written to doorbell_ops.csv
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 602
+[Profiler] doorbell_skipped: 65452
+[Profiler] Exited Normally!
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 601
+[Profiler] doorbell_skipped: 65453
+[Profiler] Exited Normally!
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 601
+[Profiler] doorbell_skipped: 65453
+[Profiler] Exited Normally!
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 602
+[Profiler] doorbell_skipped: 65452
+[Profiler] Exited Normally!
+
+--- run 4 ---
+[Profiler] Overwriting EventRecorder
+[Launcher] Launching ./doorbell_bench
+[Profiler] Overwriting EventRecorder
+[Profiler] Overwriting EventRecorder
+[Profiler] Overwriting EventRecorder
+[Launcher] Launching ./doorbell_bench
+[Launcher] Launching ./doorbell_bench
+[Launcher] Launching ./doorbell_bench
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+SigmaTrace Doorbell Benchmark v3
+PEs=4  warmup=500  iters=5000  mode=all
+Timing: globaltimer (fixed-freq ns, DVFS-immune)
+─────────────────────────────────────────────────
+
+=== SCALAR OPS (per-op completion latency, ns) ===
+  put           median=   21984 ns  p5=   20928  p95=   22688  min=   20064  max= 2483840
+  get           median=   19296 ns  p5=   19200  p95=   20608  min=   18816  max= 2568896
+  atomic        median=   20160 ns  p5=   19104  p95=   21472  min=   18688  max= 2463552
+  pingpong      median=   25824 ns  p5=   25216  p95=   28928  min=   24800  max= 2681600
+
+=== BULK PUT (per-op completion latency, ns) ===
+  put_bulk         bytes   median_ns       p5_ns      p95_ns    med_GB/s
+                      16       24704       23616       25504       0.001
+                      64       24672       23552       25408       0.003
+                     256       24704       23680       25728       0.010
+                    1024       24928       23840       25920       0.041
+                    4096       25408       24480       26592       0.161
+                   16384       27744       26496       30752       0.591
+                   65536       33152       30560       46336       1.977
+                  262144       97664       53312      143872       2.684
+
+Results written to doorbell_ops.csv
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 602
+[Profiler] doorbell_skipped: 65452
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 601
+[Profiler] doorbell_skipped: 65453
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 601
+[Profiler] doorbell_skipped: 65453
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 602
+[Profiler] doorbell_skipped: 65452
+[Profiler] Exited Normally!
+[Profiler] Exited Normally!
+[Profiler] Exited Normally!
+[Profiler] Exited Normally!
+
+--- run 5 ---
+[Profiler] Overwriting EventRecorder
+[Profiler] Overwriting EventRecorder
+[Profiler] Overwriting EventRecorder
+[Launcher] Launching ./doorbell_bench
+[Launcher] Launching ./doorbell_bench
+[Launcher] Launching ./doorbell_bench
+[Profiler] Overwriting EventRecorder
+[Launcher] Launching ./doorbell_bench
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+[Profiler] loaded mlx5dv Trace
+[Profiler] Loaded Doorbell Hijack Trace
+SigmaTrace Doorbell Benchmark v3
+PEs=4  warmup=500  iters=5000  mode=all
+Timing: globaltimer (fixed-freq ns, DVFS-immune)
+─────────────────────────────────────────────────
+
+=== SCALAR OPS (per-op completion latency, ns) ===
+  put           median=   22336 ns  p5=   21216  p95=   23296  min=   20160  max= 3378016
+  get           median=   19936 ns  p5=   19264  p95=   21984  min=   18912  max= 3273376
+  atomic        median=   19776 ns  p5=   19168  p95=   22272  min=   18848  max= 3252384
+  pingpong      median=   27552 ns  p5=   26976  p95=   32832  min=   25440  max= 3324736
+
+=== BULK PUT (per-op completion latency, ns) ===
+  put_bulk         bytes   median_ns       p5_ns      p95_ns    med_GB/s
+                      16       25024       23936       26176       0.001
+                      64       25024       23904       26048       0.003
+                     256       25088       24160       26400       0.010
+                    1024       25248       24192       26304       0.041
+                    4096       25728       24832       26752       0.159
+                   16384       27840       26848       30240       0.589
+                   65536       36960       30752       45280       1.773
+                  262144      115840       84864      128704       2.263
+
+Results written to doorbell_ops.csv
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 602
+[Profiler] doorbell_skipped: 65452
+[Profiler] Exited Normally!
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 601
+[Profiler] doorbell_skipped: 65453
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 601
+[Profiler] doorbell_skipped: 65453
+[Profiler] num_nic_doorbell_accesses: 0
+[Profiler] num_fake_nic_accesses: 66054
+[Profiler] doorbell_submitted: 602
+[Profiler] doorbell_skipped: 65452
+[Profiler] Exited Normally!
+[Profiler] Exited Normally!
+[Profiler] Exited Normally!
+

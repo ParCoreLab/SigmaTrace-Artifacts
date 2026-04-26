@@ -1,0 +1,126 @@
+# config=baseline date=2026-04-05 22:37:19
+--- run 1 ---
+SigmaTrace Doorbell Benchmark v3
+PEs=4  warmup=500  iters=5000  mode=all
+Timing: globaltimer (fixed-freq ns, DVFS-immune)
+─────────────────────────────────────────────────
+
+=== SCALAR OPS (per-op completion latency, ns) ===
+  put           median=   18208 ns  p5=   16928  p95=   18624  min=   16224  max= 2460096
+  get           median=   15552 ns  p5=   15456  p95=   16224  min=   15104  max= 2457248
+  atomic        median=   15776 ns  p5=   15328  p95=   16448  min=   14912  max= 2459104
+  pingpong      median=   18752 ns  p5=   18208  p95=   19264  min=   17696  max= 2595296
+
+=== BULK PUT (per-op completion latency, ns) ===
+  put_bulk         bytes   median_ns       p5_ns      p95_ns    med_GB/s
+                      16       20640       19648       21344       0.001
+                      64       20640       19616       21344       0.003
+                     256       20992       19520       21344       0.012
+                    1024       20992       19872       21664       0.049
+                    4096       21664       20576       22368       0.189
+                   16384       23712       22592       26048       0.691
+                   65536       30784       27456       36864       2.129
+                  262144       99200       61984      133344       2.643
+
+Results written to doorbell_ops.csv
+
+--- run 2 ---
+SigmaTrace Doorbell Benchmark v3
+PEs=4  warmup=500  iters=5000  mode=all
+Timing: globaltimer (fixed-freq ns, DVFS-immune)
+─────────────────────────────────────────────────
+
+=== SCALAR OPS (per-op completion latency, ns) ===
+  put           median=   18208 ns  p5=   16896  p95=   18688  min=   16352  max= 2489632
+  get           median=   15552 ns  p5=   15200  p95=   17152  min=   15072  max= 2456896
+  atomic        median=   15744 ns  p5=   15104  p95=   17024  min=   14912  max= 2491744
+  pingpong      median=   18752 ns  p5=   17984  p95=   19296  min=   17568  max= 2649760
+
+=== BULK PUT (per-op completion latency, ns) ===
+  put_bulk         bytes   median_ns       p5_ns      p95_ns    med_GB/s
+                      16       20640       19648       21312       0.001
+                      64       20640       19648       21344       0.003
+                     256       20992       19520       21440       0.012
+                    1024       20992       19872       21664       0.049
+                    4096       21664       20576       22560       0.189
+                   16384       23680       22528       25376       0.692
+                   65536       32672       27488       41408       2.006
+                  262144       51296       49664      132832       5.110
+
+Results written to doorbell_ops.csv
+
+--- run 3 ---
+SigmaTrace Doorbell Benchmark v3
+PEs=4  warmup=500  iters=5000  mode=all
+Timing: globaltimer (fixed-freq ns, DVFS-immune)
+─────────────────────────────────────────────────
+
+=== SCALAR OPS (per-op completion latency, ns) ===
+  put           median=   18240 ns  p5=   16992  p95=   18624  min=   16320  max= 2459840
+  get           median=   15552 ns  p5=   15456  p95=   16256  min=   15104  max= 2457120
+  atomic        median=   15744 ns  p5=   15328  p95=   16480  min=   14976  max= 2460320
+  pingpong      median=   18784 ns  p5=   18240  p95=   19296  min=   17856  max= 2598848
+
+=== BULK PUT (per-op completion latency, ns) ===
+  put_bulk         bytes   median_ns       p5_ns      p95_ns    med_GB/s
+                      16       20672       19616       21344       0.001
+                      64       20672       19616       21344       0.003
+                     256       20992       19648       21472       0.012
+                    1024       20992       19936       21664       0.049
+                    4096       21664       20640       22656       0.189
+                   16384       23680       22496       25920       0.692
+                   65536       32768       27520       39488       2.000
+                  262144       50720       49248      125056       5.168
+
+Results written to doorbell_ops.csv
+
+--- run 4 ---
+SigmaTrace Doorbell Benchmark v3
+PEs=4  warmup=500  iters=5000  mode=all
+Timing: globaltimer (fixed-freq ns, DVFS-immune)
+─────────────────────────────────────────────────
+
+=== SCALAR OPS (per-op completion latency, ns) ===
+  put           median=   18240 ns  p5=   17056  p95=   18656  min=   16384  max= 2460608
+  get           median=   15584 ns  p5=   15488  p95=   16352  min=   15200  max= 2457440
+  atomic        median=   15776 ns  p5=   15360  p95=   16544  min=   15040  max= 2458144
+  pingpong      median=   18784 ns  p5=   18240  p95=   19296  min=   17792  max= 2591296
+
+=== BULK PUT (per-op completion latency, ns) ===
+  put_bulk         bytes   median_ns       p5_ns      p95_ns    med_GB/s
+                      16       20960       19520       21344       0.001
+                      64       20960       19520       21312       0.003
+                     256       20992       19648       21568       0.012
+                    1024       21312       20096       21664       0.048
+                    4096       21664       20768       22688       0.189
+                   16384       23680       22528       25696       0.692
+                   65536       32928       27840       38112       1.990
+                  262144      100736       51520      139680       2.602
+
+Results written to doorbell_ops.csv
+
+--- run 5 ---
+SigmaTrace Doorbell Benchmark v3
+PEs=4  warmup=500  iters=5000  mode=all
+Timing: globaltimer (fixed-freq ns, DVFS-immune)
+─────────────────────────────────────────────────
+
+=== SCALAR OPS (per-op completion latency, ns) ===
+  put           median=   18208 ns  p5=   16896  p95=   18624  min=   16288  max= 2459456
+  get           median=   15552 ns  p5=   15424  p95=   16256  min=   15104  max= 2456960
+  atomic        median=   15840 ns  p5=   15360  p95=   16640  min=   14976  max= 2458496
+  pingpong      median=   18784 ns  p5=   18208  p95=   19296  min=   17824  max= 2615424
+
+=== BULK PUT (per-op completion latency, ns) ===
+  put_bulk         bytes   median_ns       p5_ns      p95_ns    med_GB/s
+                      16       20640       19648       21344       0.001
+                      64       20640       19616       21312       0.003
+                     256       20960       19520       21344       0.012
+                    1024       20992       19872       21664       0.049
+                    4096       21664       20576       22464       0.189
+                   16384       23680       22432       25728       0.692
+                   65536       34432       29312       42496       1.903
+                  262144       86464       60480      108576       3.032
+
+Results written to doorbell_ops.csv
+
